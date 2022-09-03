@@ -916,13 +916,13 @@ Go Top Style*/
   margin-bottom: 10px;
 }
 
-.main-content .middel-content .posts-area .main-content .img {
+.main-content .middel-content .posts-area .main-content .single-pull .img {
   max-width: 35%;
   margin: 0 auto;
   text-align: center;
 }
 
-.main-content .middel-content .posts-area .main-content .img span {
+.main-content .middel-content .posts-area .main-content .single-pull .img span {
   color: #6c757d;
   font-size: 13px;
 }
