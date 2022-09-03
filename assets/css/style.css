@@ -880,14 +880,44 @@ Go Top Style*/
 }
 
 .main-content .middel-content .posts-area .profile .img {
-  max-width: 90%;
-  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-content .middel-content .posts-area .profile .img img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-content .middel-content .posts-area .profile .pro-content h5 {
   font-size: 15px;
   margin-bottom: 4px;
   color: #495057;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content h5 span {
+  font-size: 11px;
+  margin-left: 10px;
+  font-weight: 500;
+  color: #495057;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content h5 span i {
+  font-size: 17px;
+  color: sandybrown;
+  position: relative;
+  top: 4px;
+  margin-right: 4px;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content h5 .group i {
+  color: #051242;
 }
 
 .main-content .middel-content .posts-area .profile .pro-content p {
@@ -951,7 +981,21 @@ Go Top Style*/
 }
 
 .main-content .middel-content .posts-area .main-content .reaction-area {
-  margin-top: 40px;
+  margin-top: 25px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .like-love {
+  margin-bottom: 15px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .like-love img {
+  max-width: 6%;
+  margin-right: 5px;
+  height: 100%;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .like-love .img2 {
+  margin-left: -10px;
 }
 
 .main-content .middel-content .posts-area .main-content .reaction-area .comments {
@@ -1087,6 +1131,80 @@ Go Top Style*/
 
 .main-content .middel-content .posts-area .main-content .comments-area .reply-bottom {
   max-width: 75%;
+}
+
+.main-content .middel-content .posts-area .main-content .single-img {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 220px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.main-content .middel-content .posts-area .main-content .single-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-content .middel-content .posts-area .main-content .single-img.img2 {
+  height: 200px;
+}
+
+.main-content .middel-content .posts-area .main-content .single-img .custome {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #2125297d;
+  top: 0;
+  left: 0;
+}
+
+.main-content .middel-content .posts-area .main-content .single-img .custome span {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 41%;
+  left: 40%;
+}
+
+.main-content .middel-content .posts-area .profile-pic {
+  height: 500px;
+  overflow: hidden;
+}
+
+.main-content .middel-content .posts-area .profile-pic img {
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-content .middel-content .posts-area .gradient-bg {
+  margin-top: 20px;
+  height: 300px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, from(#f90a10), to(#0f00f0));
+  background: linear-gradient(to right, #f90a10, #0f00f0);
+}
+
+.main-content .middel-content .posts-area .gradient-bg h3 {
+  display: block;
+  color: #fff;
+  font-size: 23px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
 }
 
 /* ----------------------------------------------------
