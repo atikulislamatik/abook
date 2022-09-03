@@ -128,7 +128,7 @@ ul {
   height: 50px;
   color: #2a2a2a;
   border: 1px solid #e8e8e8;
-  background-color: transparent;
+  background-color: #f0f0f0;
   border-radius: 0;
   padding: 0;
   font-size: 15px;
@@ -987,6 +987,10 @@ Go Top Style*/
   margin-right: 5px;
 }
 
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .single-react:hover {
+  background: #6c757d19;
+}
+
 .main-content .middel-content .posts-area .main-content .reaction-area .reacts .react-try {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1019,6 +1023,70 @@ Go Top Style*/
   visibility: visible;
   bottom: 30px;
   opacity: 1;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area {
+  position: relative;
+  margin: 15px 0;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .img {
+  max-width: 65%;
+  margin-left: 3px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .attachment li {
+  margin-right: 10px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .attachment li a {
+  font-size: 25px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comment-box {
+  position: relative;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comment-box button {
+  position: absolute;
+  right: 18px;
+  top: 7px;
+  background: transparent;
+  font-size: 17px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comment-box .form-control {
+  border-radius: 40px;
+  height: 45px;
+  padding: 10px 45px 10px 20px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comments {
+  background: #f6f6f6;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comments p {
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comments-reply {
+  margin-top: 10px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comments-reply li {
+  margin-right: 15px;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .comments-reply li span {
+  font-size: 11px;
+  color: #adb5bd;
+}
+
+.main-content .middel-content .posts-area .main-content .comments-area .reply-bottom {
+  max-width: 75%;
 }
 
 /* ----------------------------------------------------
