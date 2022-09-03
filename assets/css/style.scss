@@ -151,10 +151,12 @@ ul {
   font-size: 15px;
   padding: 10px 20px;
   width: 100%;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &::placeholder {
     color: #495057;
     font-size: 13px;
+    transition: 0.3s;
   }
 
   &:focus {
@@ -162,7 +164,11 @@ ul {
     background-color: transparent;
     box-shadow: unset;
     outline: 0;
-    border: 1px solid $main-color;
+    border: 1px solid #828282;
+
+    &::placeholder {
+      padding-left: 5px;
+    }
   }
 }
 
@@ -1544,6 +1550,10 @@ Go Top Style*/
 .main-content {
   position: relative;
 
+  hr {
+    background-color: #adb5bdb0 !important;
+  }
+
   .left-content {
     position: relative;
 
@@ -1723,9 +1733,22 @@ Go Top Style*/
         background: #7171718c;
         border-radius: 5px;
         padding: 28px 0 0px 0;
+        transition: 0.3s;
+        cursor: pointer;
+
+        &::before {
+          position: absolute;
+          content: "";
+          background: #2a2a2a30;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          visibility: hidden;
+        }
 
         .img {
-          height: 200px;
+          height: 145px;
 
           .icon {
             width: 27px;
@@ -1746,7 +1769,7 @@ Go Top Style*/
           }
 
           img {
-            height: 200px;
+            height: 145px;
             object-fit: cover;
           }
         }
@@ -1758,6 +1781,56 @@ Go Top Style*/
             color: #fff;
             text-align: center;
             margin: 0;
+          }
+        }
+
+        &:hover {
+          &::before {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    .add-post-area {
+      position: relative;
+      padding: 20px;
+      background: #fff;
+      box-shadow: $box-shadow;
+      border-radius: 5px;
+      margin-top: 20px;
+
+      .img {
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+
+        img {
+          width: 60px;
+          height: 60px;
+          object-fit: cover;
+        }
+
+      }
+
+      .post-box {
+        position: relative;
+
+        .form-control {
+          border-radius: 50px;
+          background: #f0f0f0;
+        }
+      }
+      .single-add{
+        text-align: center;
+        margin-bottom: 5px;
+        a{
+          font-size: 15px;
+          i{
+            font-size: 20px;
+            margin-right: 5px;
+            position: relative;
+            top: 5px;
           }
         }
       }

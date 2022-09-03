@@ -66,7 +66,7 @@ jQuery(
           items: 3,
         },
         1300: {
-          items: 2,
+          items: 3,
         },
       },
     });
