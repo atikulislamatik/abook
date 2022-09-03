@@ -526,6 +526,24 @@ Go Top Style*/
   background-color: #adb5bdb0 !important;
 }
 
+.main-content .mb-20 {
+  margin-bottom: 20px;
+}
+
+.main-content .mt-20 {
+  margin-top: 20px;
+}
+
+.main-content .social-card {
+  position: relative;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
 .main-content .left-content {
   position: relative;
 }
@@ -635,8 +653,16 @@ Go Top Style*/
   padding: 10px 20px 10px 45px;
 }
 
+.main-content .right-content .social-card.your-friends h5 {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #495057;
+}
+
 .main-content .right-content .social-card.your-friends p {
-  font-weight: 500;
+  font-size: 13px;
+  color: #adb5bd;
+  margin-bottom: 0;
 }
 
 .main-content .middel-content {
@@ -764,10 +790,17 @@ Go Top Style*/
   margin-top: 20px;
 }
 
+.main-content .middel-content .add-post-area .custome {
+  width: 14% !important;
+}
+
+.main-content .middel-content .add-post-area .custome1 {
+  width: 86% !important;
+}
+
 .main-content .middel-content .add-post-area .img {
   width: 60px;
   height: 60px;
-  margin: 0 auto;
 }
 
 .main-content .middel-content .add-post-area .img img {
@@ -800,5 +833,209 @@ Go Top Style*/
   margin-right: 5px;
   position: relative;
   top: 5px;
+}
+
+.main-content .middel-content .post-list .nav-pills .nav-link.active,
+.main-content .middel-content .post-list .nav-pills .show > .nav-link,
+.main-content .middel-content .post-list .nav-link {
+  background: transparent;
+  color: #212529;
+}
+
+.main-content .middel-content .post-list .nav-link {
+  padding: 0;
+  padding-right: 20px;
+}
+
+.main-content .middel-content .post-list .nav-pills .nav-link.active,
+.main-content .middel-content .post-list .nav-pills .show > .nav-link {
+  color: #db2025 !important;
+}
+
+.main-content .middel-content .posts-area {
+  position: relative;
+}
+
+.main-content .middel-content .posts-area hr {
+  margin: 5px !important;
+}
+
+.main-content .middel-content .posts-area .dropdown button {
+  background: transparent !important;
+}
+
+.main-content .middel-content .posts-area .dropdown button i {
+  font-size: 22px;
+}
+
+.main-content .middel-content .posts-area .dropdown ul li a {
+  font-size: 15px;
+}
+
+.main-content .middel-content .posts-area .dropdown ul li a i {
+  color: #65676B;
+  position: relative;
+  top: 2px;
+  margin-right: 7px;
+}
+
+.main-content .middel-content .posts-area .profile .img {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content h5 {
+  font-size: 15px;
+  margin-bottom: 4px;
+  color: #495057;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content p {
+  font-size: 13px;
+  color: #adb5bd;
+  margin-bottom: 0;
+}
+
+.main-content .middel-content .posts-area .profile .pro-content p i {
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+
+.main-content .middel-content .posts-area .main-content {
+  position: relative;
+}
+
+.main-content .middel-content .posts-area .main-content label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-content .middel-content .posts-area .main-content .single-pull {
+  margin-bottom: 10px;
+}
+
+.main-content .middel-content .posts-area .main-content .img {
+  max-width: 35%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-content .middel-content .posts-area .main-content .img span {
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.main-content .middel-content .posts-area .main-content .icon {
+  text-align: center;
+}
+
+.main-content .middel-content .posts-area .main-content .icon i {
+  font-size: 25px;
+}
+
+.main-content .middel-content .posts-area .main-content .content {
+  padding: 10px 15px;
+  background: #f0f2f5;
+  width: 100%;
+  border: 1px solid #e0dfdf;
+  border-radius: 5px;
+}
+
+.main-content .middel-content .posts-area .main-content .content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #495057;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area {
+  margin-top: 40px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .comments {
+  margin-bottom: 15px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .comments a span {
+  color: #6c757d;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts {
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* ----------------------------------------------------
+Checkbox
+---------------------------------------------------- */
+/* checkbox-item */
+.checkbox-item {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkbox-item .checkmark {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid;
+  border-color: #93959e;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox-item:hover input ~ .checkmark {
+  background-color: #05f;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-item input:checked ~ .checkmark {
+  background-color: #05f;
+  border-color: #05f;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-item .checkmark:after {
+  position: absolute;
+  content: "";
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-item .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 6px;
+  height: 11px;
+  border: solid #fff;
+  border-width: 0 1px 1px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */

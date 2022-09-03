@@ -165,12 +165,12 @@
                 <div class="col-lg-12">
                   <div class="add-post-area">
                     <div class="row align-items-center">
-                      <div class="col-2">
+                      <div class="col-2 pe-0 custome">
                         <div class="img">
                           <img src="assets/images/user/1.png" alt="user" />
                         </div>
                       </div>
-                      <div class="col-10 ps-0">
+                      <div class="col-10 custome1 ps-0">
                         <div class="post-box">
                           <form>
                             <input
@@ -182,21 +182,30 @@
                         </div>
                       </div>
                     </div>
-                    <hr>
+                    <hr />
                     <div class="row">
                       <div class="col-lg-4">
                         <div class="single-add">
-                          <a href="#"><i class="ri-gallery-fill"></i> <span>Background</span> </a>
+                          <a href="#"
+                            ><i class="ri-gallery-fill"></i>
+                            <span>Background</span>
+                          </a>
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="single-add">
-                         <a href="#"> <i class="ri-camera-3-fill"></i> <span>Photo/Video</span></a>
+                          <a href="#">
+                            <i class="ri-camera-3-fill"></i>
+                            <span>Photo/Video</span></a
+                          >
                         </div>
                       </div>
                       <div class="col-lg-4">
                         <div class="single-add">
-                          <a href="#"><i class="ri-emotion-happy-line"></i><span>Feeling/Activity</span></a>
+                          <a href="#"
+                            ><i class="ri-emotion-happy-line"></i
+                            ><span>Feeling/Activity</span></a
+                          >
                         </div>
                       </div>
                     </div>
@@ -204,6 +213,218 @@
                 </div>
               </div>
               <!-- End Add Post area -->
+
+              <!-- Posts area -->
+              <div class="social-card mt-20 post-list">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-public"
+                    >
+                      Public Posts
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-friends"
+                    >
+                      Friends Posts
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-public"
+                  role="tabpanel"
+                >
+                  <div class="social-card posts-area">
+                    <div class="row">
+                      <div class="col-10">
+                        <div class="row align-items-center profile">
+                          <div class="col-2">
+                            <div class="img">
+                              <img src="assets/images/user/1.png" alt="user" />
+                            </div>
+                          </div>
+                          <div class="col-10 ps-0">
+                            <div class="pro-content">
+                              <a href="#">
+                                <h5>Atikul Islam Atik</h5>
+                                <p>
+                                  1 hours ago <i class="ri-global-fill"></i>
+                                </p>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-2">
+                        <div class="dropdown text-end">
+                          <button
+                            class="menu"
+                            type="button"
+                            data-bs-toggle="dropdown"
+                          >
+                            <i class="ri-arrow-down-s-line"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="ri-bookmark-fill"></i> Save Post</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="ri-flag-fill"></i> Report Post</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="ri-pencil-fill"></i> Edit Post</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                ><i class="ri-delete-bin-7-fill"></i> Delete
+                                Post</a
+                              >
+                            </li>
+                            <hr />
+                            <li>
+                              <a class="dropdown-item" target="_blank" href="#"
+                                ><i class="ri-links-line"></i> Open Post in new
+                                tab</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="main-content">
+                          <p class="mt-2 mb-2">Your favourite game</p>
+                          <div class="single-pull">
+                            <div class="row align-items-center">
+                              <div class="col-8">
+                                <label class="checkbox-item">
+                                  <div class="content">
+                                    <span>Added by you</span>
+                                    <p>Football</p>
+                                  </div>
+                                  <input
+                                    type="checkbox"
+                                    value="football"
+                                    checked
+                                  />
+                                  <span class="checkmark"></span>
+                                </label>
+                              </div>
+                              <div class="col-3">
+                                <div class="img">
+                                  <img
+                                    src="assets/images/user/1.png"
+                                    alt="user"
+                                  />
+                                  <span>1 vote</span>
+                                </div>
+                              </div>
+                              <div class="col-1">
+                                <a href="#" class="icon">
+                                  <i class="ri-close-circle-fill"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="single-pull">
+                            <div class="row align-items-center">
+                              <div class="col-8">
+                                <label class="checkbox-item">
+                                  <div class="content">
+                                    <span>Added by you</span>
+                                    <p>Cricket</p>
+                                  </div>
+                                  <input type="checkbox" value="football" />
+                                  <span class="checkmark"></span>
+                                </label>
+                              </div>
+                              <div class="col-3">
+                                <div class="img"></div>
+                              </div>
+                              <div class="col-1">
+                                <a href="#" class="icon">
+                                  <i class="ri-close-circle-fill"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="single-pull">
+                            <div class="row align-items-center">
+                              <div class="col-8">
+                                <label class="checkbox-item">
+                                  <div class="content">
+                                    <span>Added by you</span>
+                                    <p>Badminton</p>
+                                  </div>
+                                  <input type="checkbox" value="football" />
+                                  <span class="checkmark"></span>
+                                </label>
+                              </div>
+                              <div class="col-3">
+                                <div class="img"></div>
+                              </div>
+                              <div class="col-1">
+                                <a href="#" class="icon">
+                                  <i class="ri-close-circle-fill"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="reaction-area">
+                            <div class="row">
+                              <div class="col-6"></div>
+                              <div class="col-6 text-end comments">
+                                <a href="#">1 <span>Comments</span></a>
+                              </div>
+                            </div>
+                            <div class="reacts">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="single-react">
+                                    <a href="#"
+                                      ><i class="ri-thumb-up-line"></i>
+                                      <span>Like</span>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-friends" role="tabpanel">
+                  <div class="social-card">
+                    <div class="d-table">
+                      <div class="d-table-cell">
+                        <img src="assets/images/nodata.svg" alt="nodata" />
+                        <h3 class="text-center text-danger">
+                          No friends post found !
+                        </h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-lg-3">
@@ -217,8 +438,10 @@
                   </div>
                   <div class="col-9 ps-0">
                     <div class="content">
-                      <h5>Lorem Islam</h5>
-                      <p>12 mutual friends</p>
+                      <a href="#"
+                        ><h5>Lorem Islam</h5>
+                        <p>12 mutual friends</p></a
+                      >
                     </div>
                   </div>
                 </div>
@@ -251,7 +474,10 @@
                   </div>
                   <div class="col-9 ps-0">
                     <div class="content">
-                      <p>Lorem Islam</p>
+                      <a href="#">
+                        <h5>Lorem Islam</h5>
+                        <p>12 mutual friends</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -261,7 +487,10 @@
                   </div>
                   <div class="col-9 ps-0">
                     <div class="content">
-                      <p>Lorem Islam</p>
+                      <a href="#">
+                        <h5>Lorem ipsum</h5>
+                        <p>12 mutual friends</p>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -271,6 +500,24 @@
         </div>
       </div>
     </section>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <!-- Scroll top -->
     <div class="go-top">
