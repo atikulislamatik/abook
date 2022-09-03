@@ -965,6 +965,60 @@ Go Top Style*/
 .main-content .middel-content .posts-area .main-content .reaction-area .reacts {
   padding: 10px;
   background: #fafafa;
+  position: relative;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .single-react {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1;
+  text-align: center;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .single-react .like {
+  font-size: 14px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .single-react .like i {
+  font-size: 18px;
+  position: relative;
+  top: 3px;
+  margin-right: 5px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .react-try {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  visibility: hidden;
+  width: 210px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .react-try li {
+  margin-right: 10px;
+}
+
+.main-content .middel-content .posts-area .main-content .reaction-area .reacts .like-react:hover .react-try {
+  visibility: visible;
+  bottom: 30px;
+  opacity: 1;
 }
 
 /* ----------------------------------------------------

@@ -2002,24 +2002,80 @@ Go Top Style*/
 
         .reaction-area {
           margin-top: 40px;
-          .comments{
+
+          .comments {
             margin-bottom: 15px;
-            a{
-              span{
+
+            a {
+              span {
                 color: #6c757d;
               }
             }
           }
-          .reacts{
+
+          .reacts {
             padding: 10px;
             background: #fafafa;
+            position: relative;
+
+            .single-react {
+              position: relative;
+              transition: $transition;
+              z-index: 1;
+              text-align: center;
+
+              .like {
+                font-size: 14px;
+
+                i {
+                  font-size: 18px;
+                  position: relative;
+                  top: 3px;
+                  margin-right: 5px;
+                }
+              }
+            }
+
+            .react-try {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              overflow: hidden;
+              visibility: hidden;
+              width: 210px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              z-index: -1;
+              opacity: 0;
+              transition: 0.3s ease all;
+              transition-delay: 0.2s;
+
+              li {
+                margin-right: 10px;
+              }
+            }
+
+            .like-react {
+              &:hover {
+                .react-try {
+                  visibility: visible;
+                  bottom: 30px;
+                  opacity: 1;
+                }
+              }
+            }
+
+
           }
+
         }
       }
     }
-
   }
+
 }
+
 
 
 /* ----------------------------------------------------
