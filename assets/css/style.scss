@@ -1,36 +1,4 @@
 /*
-@File: Paso Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS
-** - Preloader Area CSS
-** - Navbar Area CSS
-** - Banner Area CSS
-** - Services Area CSS
-** - Our Company Area CSS
-** - Why Choose us Area CSS
-** - Working Process Area CSS
-** - Case Studies Area CSS
-** - Features Area CSS
-** - Team Members Area CSS
-** - Testimonial Area CSS
-** - Blog Post Area CSS
-** - Contact Us Area CSS
-** - Footer Area CSS
-** - Copy Right Area CSS
-** - Go Top CSS
-*******************************************
-*/
-
-/*
 Default Style
 ============================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -38,7 +6,7 @@ Default Style
 $body-font-family: "Inter", sans-serif;
 $heading-font-family: "Inter", sans-serif;
 
-$main-color: #6e02aa;
+$main-color: #3644d9;
 $body-color: #212529;
 $heading-color: #2a2a2a;
 $white-color: #ffffff;
@@ -71,7 +39,7 @@ a {
 
   &:hover {
     text-decoration: none;
-    color: $heading-color;
+    color: $main-color;
   }
 
   &:focus {
@@ -704,11 +672,17 @@ Navbar Area Style
             display: flex;
             align-items: center;
             font-size: 15px;
+            transition: $transition;
 
             i {
               position: relative;
               margin-right: 7px;
               font-size: 19px;
+            }
+
+            &:hover {
+              transform: translateX(5px);
+              color: $main-color
             }
           }
         }

@@ -1,35 +1,4 @@
 /*
-@File: Paso Template Styles
-
-* This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
-
-This files table contents are outlined below>>>>>
-
-*******************************************
-*******************************************
-
-** - Default CSS
-** - Preloader Area CSS
-** - Navbar Area CSS
-** - Banner Area CSS
-** - Services Area CSS
-** - Our Company Area CSS
-** - Why Choose us Area CSS
-** - Working Process Area CSS
-** - Case Studies Area CSS
-** - Features Area CSS
-** - Team Members Area CSS
-** - Testimonial Area CSS
-** - Blog Post Area CSS
-** - Contact Us Area CSS
-** - Footer Area CSS
-** - Copy Right Area CSS
-** - Go Top CSS
-*******************************************
-*/
-/*
 Default Style
 ============================*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -53,7 +22,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #2a2a2a;
+  color: #3644d9;
 }
 
 a:focus {
@@ -419,7 +388,7 @@ Go Top Style*/
   cursor: pointer;
   top: 93%;
   right: -10%;
-  background-color: #6e02aa;
+  background-color: #3644d9;
   z-index: 4;
   width: 40px;
   text-align: center;
@@ -459,7 +428,7 @@ Go Top Style*/
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #6e02aa;
+  background-color: #3644d9;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
@@ -699,12 +668,20 @@ Navbar Area Style
       -ms-flex-align: center;
           align-items: center;
   font-size: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .main-content .left-content .social-card ul li a i {
   position: relative;
   margin-right: 7px;
   font-size: 19px;
+}
+
+.main-content .left-content .social-card ul li a:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  color: #3644d9;
 }
 
 .main-content .left-content .social-card.app-store ul li {
