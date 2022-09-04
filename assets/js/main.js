@@ -5,24 +5,41 @@ jQuery(
     $(window).ready(function () {
       $(".loader-content").fadeOut(1200);
     });
+ // Go to Top
+	// Scroll Event
+	$(window).on('scroll', function(){
+		var scrolled = $(window).scrollTop();
+		if (scrolled > 300) $('.go-top').addClass('active');
+		if (scrolled < 300) $('.go-top').removeClass('active');
+	});  
 
-    // Metis Menu JS
-    $(function () {
-      $('#sidemenu-nav').metisMenu();
+	// Click Event
+	$('.go-top').on('click', function() {
+		$("html, body").animate({ scrollTop: "0" },  50);
     });
 
-    // Responsive Burger Menu JS
-    $('.responsive-burger-menu').on('click', function () {
-      $('.responsive-burger-menu').toggleClass('active');
-      $('.sidemenu-area').toggleClass('active-sidemenu-area');
-    });
+    	// Mean Menu
+	$('.mean-menu').meanmenu({
+		meanScreenWidth: "1199"
+	});
+	
+	// Sticky, Go To Top JS
+	$(window).on('scroll', function() {
+		// Header Sticky JS
+		if ($(this).scrollTop() >150){  
+			$('.navbar-area').addClass("is-sticky");
+		}
+		else{
+			$('.navbar-area').removeClass("is-sticky");
+		};
 
-    // Navbar Burger Menu JS
-    $('.navbar-burger-menu').on('click', function () {
-      $('.navbar-burger-menu').toggleClass('active');
-      $('.sidemenu-area').toggleClass('active-sidemenu-area');
-    });
-
+		// Go To Top JS
+		var scrolled = $(window).scrollTop();
+		if (scrolled > 300) $('.go-top').addClass('active');
+		if (scrolled < 300) $('.go-top').removeClass('active');
+	});
+	
+  
     // Popup Video
     $(".popup-video").magnificPopup({
       disableOn: 320,
@@ -63,7 +80,7 @@ jQuery(
           items: 2,
         },
         1000: {
-          items: 3,
+          items: 2,
         },
         1300: {
           items: 3,

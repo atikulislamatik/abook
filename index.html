@@ -10,7 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- MeanMenu CSS -->
-    <link rel="stylesheet" href="assets/css/metismenu.min.css" />
+    <link rel="stylesheet" href="assets/css/meanmenu.css" />
     <!-- Boxicon CSS -->
     <link rel="stylesheet" href="assets/css/remixicon.css" />
     <!-- Magnific CSS -->
@@ -43,12 +43,86 @@
     </div>
     <!-- PreLoader End -->
 
+    <div class="navbar-area">
+      <div class="mobile-responsive-nav">
+        <div class="container">
+          <div class="mobile-responsive-menu">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  src="assets/images/logo.png"
+                  class="main-logo"
+                  alt="logo"
+                />
+                <img
+                  src="assets/images/white-logo.png"
+                  class="white-logo"
+                  alt="logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="desktop-nav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/images/logo.png" class="main-logo" alt="logo" />
+              <img
+                src="assets/images/white-logo.png"
+                class="white-logo"
+                alt="logo"
+              />
+            </a>
+
+            <div
+              class="collapse navbar-collapse mean-menu"
+              id="navbarSupportedContent"
+              style="display: block"
+            >
+              <div class="others-options">
+                <form class="search-form">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search..."
+                  />
+                  <button type="submit" class="src-btn">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </form>
+              </div>
+
+              <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                  <a href="#" class="nav-link dropdown-toggle active"> Home </a>
+
+                  <ul class="dropdown-menu">
+                    <li class="nav-item">
+                      <a href="index.html" class="nav-link active">Home One</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index-2.html" class="nav-link">Home Two</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="index-3.html" class="nav-link">Home Three</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
     <section class="main-content mt-3">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <div class="left-content">
-              <div class="social-card">
+              <div class="social-card explore">
                 <h3>Explore</h3>
                 <ul>
                   <li>
@@ -106,8 +180,8 @@
           <div class="col-lg-6">
             <div class="middel-content">
               <!-- Story area -->
-              <div class="row">
-                <div class="col-lg-3">
+              <div class="row tb-story">
+                <div class="col-lg-3 col-md-4">
                   <div class="add-story">
                     <a href="#">
                       <div class="img">
@@ -120,7 +194,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-9 col-md-8">
                   <div class="story-slider owl-carousel owl-theme">
                     <div class="single-story">
                       <a href="#">
@@ -136,7 +210,7 @@
                     <div class="single-story">
                       <a href="#">
                         <div class="img">
-                          <img src="assets/images/story/5.jpg" alt="story" />
+                          <img src="assets/images/story/3.jpg" alt="story" />
                           <div class="icon"><i class="ri-user-3-line"></i></div>
                         </div>
                         <div class="bottom-content">
@@ -165,7 +239,7 @@
                 <div class="col-lg-12">
                   <div class="add-post-area">
                     <div class="row align-items-center">
-                      <div class="col-2 pe-0 custome">
+                      <div class="col-2 col-md-12 pe-0 custome">
                         <div class="img">
                           <img src="assets/images/user/1.png" alt="user" />
                         </div>
@@ -183,8 +257,8 @@
                       </div>
                     </div>
                     <hr />
-                    <div class="row">
-                      <div class="col-lg-4">
+                    <div class="row add-mobile">
+                      <div class="col-lg-4 col-md-4">
                         <div class="single-add">
                           <a href="#"
                             ><i class="ri-gallery-fill"></i>
@@ -192,7 +266,7 @@
                           </a>
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 col-md-4">
                         <div class="single-add">
                           <a href="#">
                             <i class="ri-camera-3-fill"></i>
@@ -200,7 +274,7 @@
                           >
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-lg-4 col-md-4">
                         <div class="single-add">
                           <a href="#"
                             ><i class="ri-emotion-happy-line"></i
@@ -243,17 +317,17 @@
                   id="pills-public"
                   role="tabpanel"
                 >
-                  <!-- Fiest post -->
+                  <!-- First post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/1.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-7 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>Atikul Islam Atik</h5>
@@ -265,7 +339,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -308,12 +382,12 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-12">
+                      <div class="col-lg-12 col-12">
                         <div class="main-content">
                           <p class="mt-2 mb-2">Your favourite game</p>
                           <div class="single-pull">
                             <div class="row align-items-center">
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <label class="checkbox-item">
                                   <div class="content">
                                     <span>Added by you</span>
@@ -327,7 +401,7 @@
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
-                              <div class="col-3">
+                              <div class="col-lg-3 col-3">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -336,7 +410,7 @@
                                   <span>1 vote</span>
                                 </div>
                               </div>
-                              <div class="col-1">
+                              <div class="col-lg-1 col-2">
                                 <a href="#" class="icon">
                                   <i class="ri-close-circle-fill"></i>
                                 </a>
@@ -345,7 +419,7 @@
                           </div>
                           <div class="single-pull">
                             <div class="row align-items-center">
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <label class="checkbox-item">
                                   <div class="content">
                                     <span>Added by you</span>
@@ -355,10 +429,10 @@
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
-                              <div class="col-3">
+                              <div class="col-lg-3 col-3">
                                 <div class="img"></div>
                               </div>
-                              <div class="col-1">
+                              <div class="col-lg-1 col-2">
                                 <a href="#" class="icon">
                                   <i class="ri-close-circle-fill"></i>
                                 </a>
@@ -367,7 +441,7 @@
                           </div>
                           <div class="single-pull">
                             <div class="row align-items-center">
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <label class="checkbox-item">
                                   <div class="content">
                                     <span>Added by you</span>
@@ -377,10 +451,10 @@
                                   <span class="checkmark"></span>
                                 </label>
                               </div>
-                              <div class="col-3">
+                              <div class="col-lg-3 col-3">
                                 <div class="img"></div>
                               </div>
-                              <div class="col-1">
+                              <div class="col-lg-1 col-2">
                                 <a href="#" class="icon">
                                   <i class="ri-close-circle-fill"></i>
                                 </a>
@@ -467,7 +541,7 @@
                           </div>
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -475,7 +549,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -496,7 +570,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -512,7 +586,7 @@
                               </div>
                             </div>
                             <div class="row mt-2">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/3.png"
@@ -520,9 +594,9 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-7 ps-0">
+                              <div class="col-lg-7 col-10 ps-0">
                                 <div class="row align-items-center">
-                                  <div class="col-8 ps-0">
+                                  <div class="col-lg-8 col-10 ps-0">
                                     <div class="comments">
                                       <p>Lorem islam</p>
                                       <img
@@ -538,7 +612,7 @@
                                       <li><span>55 minutes ago</span></li>
                                     </ul>
                                   </div>
-                                  <div class="col-4">
+                                  <div class="col-lg-4 col-2">
                                     <div class="dropdown text-start">
                                       <button
                                         class="menu"
@@ -573,7 +647,7 @@
                                   </div>
                                 </div>
                                 <div class="row align-items-center mt-3 mb-3">
-                                  <div class="col-3 pe-0">
+                                  <div class="col-lg-3 col-2 pe-0">
                                     <div class="img reply-bottom">
                                       <img
                                         src="assets/images/user/1.png"
@@ -581,7 +655,7 @@
                                       />
                                     </div>
                                   </div>
-                                  <div class="col-7 ps-0">
+                                  <div class="col-lg-7 col-8 ps-0">
                                     <div class="comments">
                                       <p>Lorem islam</p>
                                       <span>Wow</span>
@@ -593,7 +667,7 @@
                                       <li><span>55 minutes ago</span></li>
                                     </ul>
                                   </div>
-                                  <div class="col-2">
+                                  <div class="col-lg-2 col-2">
                                     <div class="dropdown text-start">
                                       <button
                                         class="menu"
@@ -630,7 +704,7 @@
                               </div>
                             </div>
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -638,7 +712,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -659,7 +733,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -683,14 +757,14 @@
                   <!-- Second post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/1.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>
@@ -708,7 +782,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -755,7 +829,7 @@
                         <div class="main-content">
                           <p class="mt-2 mb-2">Have a good day !</p>
 
-                          <div class="row">
+                          <div class="row good">
                             <div class="col-6 pe-0">
                               <a
                                 class="read-more popup-img"
@@ -903,7 +977,7 @@
                           </div>
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -911,7 +985,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -932,7 +1006,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -956,9 +1030,9 @@
                   <!-- Third post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img
                                 src="assets/images/story/profile.jpg"
@@ -966,7 +1040,7 @@
                               />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>
@@ -981,7 +1055,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -1128,7 +1202,7 @@
                           </div>
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -1136,7 +1210,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -1157,7 +1231,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -1181,14 +1255,14 @@
                   <!-- Fourth post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/3.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>
@@ -1206,7 +1280,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -1354,7 +1428,7 @@
                           </div>
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -1362,7 +1436,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -1383,7 +1457,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -1407,14 +1481,14 @@
                   <!-- Fifth post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/3.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>Lorem deo ipsum</h5>
@@ -1426,7 +1500,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -1588,7 +1662,7 @@
                           </div>
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -1596,7 +1670,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -1617,7 +1691,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -1641,14 +1715,14 @@
                   <!-- Sevent post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/3.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>Fio Pharoah</h5>
@@ -1660,7 +1734,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -1809,7 +1883,7 @@
 
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -1817,7 +1891,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -1838,7 +1912,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -1862,14 +1936,14 @@
                   <!-- Sevent post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/4.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>Mac dusa</h5>
@@ -1881,7 +1955,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -2039,7 +2113,7 @@
                           <div class="comments-area">
                             <a href="#">View more comments</a>
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -2047,7 +2121,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -2068,7 +2142,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -2092,14 +2166,14 @@
                   <!-- Eight post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/4.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>KK Ro</h5>
@@ -2111,7 +2185,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -2266,7 +2340,7 @@
 
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -2274,7 +2348,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -2295,7 +2369,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -2319,14 +2393,14 @@
                   <!-- Nineth post -->
                   <div class="social-card posts-area">
                     <div class="row">
-                      <div class="col-10">
+                      <div class="col-lg-10 col-10">
                         <div class="row align-items-center profile">
-                          <div class="col-2">
+                          <div class="col-lg-2 col-md-2 col-3">
                             <div class="img">
                               <img src="assets/images/user/3.png" alt="user" />
                             </div>
                           </div>
-                          <div class="col-10 ps-0">
+                          <div class="col-lg-10 col-9 ps-0">
                             <div class="pro-content">
                               <a href="#">
                                 <h5>Fio Pharoah</h5>
@@ -2338,7 +2412,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-2">
+                      <div class="col-lg-2 col-2">
                         <div class="dropdown text-end">
                           <button
                             class="menu"
@@ -2487,7 +2561,7 @@
 
                           <div class="comments-area">
                             <div class="row align-items-center">
-                              <div class="col-2 pe-0">
+                              <div class="col-lg-2 col-2 pe-0">
                                 <div class="img">
                                   <img
                                     src="assets/images/user/1.png"
@@ -2495,7 +2569,7 @@
                                   />
                                 </div>
                               </div>
-                              <div class="col-2 ps-0">
+                              <div class="col-lg-2 col-md-2 col-3 ps-0">
                                 <ul
                                   class="attachment d-flex align-items-center"
                                 >
@@ -2516,7 +2590,7 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="col-8">
+                              <div class="col-lg-8 col-7">
                                 <div class="comment-box m-auto mt-3 mb-3">
                                   <form>
                                     <input
@@ -2634,7 +2708,7 @@
 
     <!-- Scroll top -->
     <div class="go-top">
-      <i class="ri-arrow-up-line"></i>
+      <i class="ri-arrow-up-s-line"></i>
     </div>
 
     <!-- Jquery Slim JS -->
@@ -2642,7 +2716,7 @@
     <!-- Boostrap Js  -->
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- MeanMenu JS -->
-    <script src="assets/js/metismenu.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.js"></script>
     <!-- Magnific Popup Js -->
     <script src="assets/js/magnific-popup.min.js"></script>
     <!-- Owl carousel Js -->
