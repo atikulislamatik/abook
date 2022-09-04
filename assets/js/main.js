@@ -5,41 +5,7 @@ jQuery(
     $(window).ready(function () {
       $(".loader-content").fadeOut(1200);
     });
- // Go to Top
-	// Scroll Event
-	$(window).on('scroll', function(){
-		var scrolled = $(window).scrollTop();
-		if (scrolled > 300) $('.go-top').addClass('active');
-		if (scrolled < 300) $('.go-top').removeClass('active');
-	});  
 
-	// Click Event
-	$('.go-top').on('click', function() {
-		$("html, body").animate({ scrollTop: "0" },  50);
-    });
-
-    	// Mean Menu
-	$('.mean-menu').meanmenu({
-		meanScreenWidth: "1199"
-	});
-	
-	// Sticky, Go To Top JS
-	$(window).on('scroll', function() {
-		// Header Sticky JS
-		if ($(this).scrollTop() >150){  
-			$('.navbar-area').addClass("is-sticky");
-		}
-		else{
-			$('.navbar-area').removeClass("is-sticky");
-		};
-
-		// Go To Top JS
-		var scrolled = $(window).scrollTop();
-		if (scrolled > 300) $('.go-top').addClass('active');
-		if (scrolled < 300) $('.go-top').removeClass('active');
-	});
-	
-  
     // Popup Video
     $(".popup-video").magnificPopup({
       disableOn: 320,
@@ -59,6 +25,15 @@ jQuery(
       },
     });
 
+
+        // Sticky Nav1
+        $(document).on("scroll", function () {
+          if ($(document).scrollTop() > 100) {
+            $(".navbar-area").addClass("is-sticky");
+          } else {
+            $(".navbar-area").removeClass("is-sticky");
+          }
+        });
 
     // Owl Carausele
 
@@ -87,6 +62,9 @@ jQuery(
         },
       },
     });
+
+
+    
 
 
   })(jQuery)

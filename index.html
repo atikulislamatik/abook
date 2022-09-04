@@ -43,80 +43,99 @@
     </div>
     <!-- PreLoader End -->
 
-    <div class="navbar-area">
-      <div class="mobile-responsive-nav">
-        <div class="container">
-          <div class="mobile-responsive-menu">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="assets/images/logo.png"
-                  class="main-logo"
-                  alt="logo"
-                />
-                <img
-                  src="assets/images/white-logo.png"
-                  class="white-logo"
-                  alt="logo"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="desktop-nav">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-md navbar-light">
-            <a class="navbar-brand" href="index.html">
-              <img src="assets/images/logo.png" class="main-logo" alt="logo" />
-              <img
-                src="assets/images/white-logo.png"
-                class="white-logo"
-                alt="logo"
+    <nav class="navbar navbar-expand-lg navbar-area">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"><i class="ri-menu-line"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="search-box m-auto">
+            <form>
+              <input
+                type="text"
+                class="input-search form-control"
+                placeholder="Search..."
               />
-            </a>
+              <button type="submit">
+                <i class="ri-search-line"></i>
+              </button>
+            </form>
+          </div>
 
-            <div
-              class="collapse navbar-collapse mean-menu"
-              id="navbarSupportedContent"
-              style="display: block"
-            >
-              <div class="others-options">
-                <form class="search-form">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Search..."
-                  />
-                  <button type="submit" class="src-btn">
-                    <i class="ri-search-line"></i>
-                  </button>
-                </form>
-              </div>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                ><i class="ri-home-heart-line"></i>
+                <span class="mobile-hd">Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="ri-group-line"></i>
+                <span class="mobile-hd">Firnds</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="ri-notification-3-line"></i>
+                <span class="mobile-hd">Notifications</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                ><i class="ri-chat-heart-line"></i>
+                <span class="mobile-hd">Message</span></a
+              >
+            </li>
 
-              <ul class="navbar-nav m-auto">
-                <li class="nav-item">
-                  <a href="#" class="nav-link dropdown-toggle active"> Home </a>
-
-                  <ul class="dropdown-menu">
-                    <li class="nav-item">
-                      <a href="index.html" class="nav-link active">Home One</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="index-2.html" class="nav-link">Home Two</a>
-                    </li>
-                    <li class="nav-item">
-                      <a href="index-3.html" class="nav-link">Home Three</a>
-                    </li>
-                  </ul>
+            <li class="nav-item dropdown profile">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img src="assets/images/user/1.png" alt="user" /> Atikul Islam
+                Atik <i class="ri-arrow-down-s-line"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="ri-profile-line"></i> Profile</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="ri-group-line"></i> People</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="ri-logout-box-line"></i> Logout</a
+                  >
                 </li>
               </ul>
-            </div>
-          </nav>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
+
+    <!-- Main content -->
     <section class="main-content mt-3">
       <div class="container">
         <div class="row">
@@ -2705,11 +2724,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Scroll top -->
-    <div class="go-top">
-      <i class="ri-arrow-up-s-line"></i>
-    </div>
 
     <!-- Jquery Slim JS -->
     <script src="assets/js/jquery-3.5.0.min.js"></script>

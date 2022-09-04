@@ -88,11 +88,37 @@
   hr {
     margin-bottom: 5px !important;
   }
+  .navbar-area ul.navbar-nav li a .mobile-hd {
+    display: inline-block;
+  }
+  .navbar-area ul.navbar-nav li a i {
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+    margin-right: 7px;
+  }
+  .navbar-area .search-box {
+    max-width: 100%;
+    margin-top: 20px !important;
+  }
 }
 
 /* Min width 485px to Max width 767px */
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-area ul.navbar-nav li a .mobile-hd {
+    display: inline-block;
+  }
+  .navbar-area ul.navbar-nav li a i {
+    font-size: 25px;
+    position: relative;
+    top: 8px;
+    margin-right: 7px;
+  }
+  .navbar-area .search-box {
+    margin-top: 20px !important;
+    max-width: 100%;
+  }
   .main-content .middel-content .story-slider .single-story .img {
     height: 220px;
   }
